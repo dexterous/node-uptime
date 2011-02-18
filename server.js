@@ -8,7 +8,7 @@ function secondsSince(when) {
 }
 
 function uptime() {
-  reutrn '' + secondsSince(start)
+  return '' + secondsSince(start)
 }
 
 http.createServer(function(req, res) {
