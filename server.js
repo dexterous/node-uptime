@@ -12,6 +12,6 @@ function uptime() {
 }
 
 http.createServer(function(req, res) {
-  res.end(os.hostname() + " has been up for " + uptime())
+  res.end(os.hostname() + " has been up for " + uptime() + "s.")
 }).listen(80)
 
