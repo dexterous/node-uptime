@@ -3,7 +3,15 @@ var os = require('os')
 
 var start = new Date()
 
+function secondsSince(when) {
+  return (new Date() - when) / 1000
+}
+
+function uptime() {
+  reutrn '' + secondsSince(start)
+}
+
 http.createServer(function(req, res) {
-  res.end(os.hostname() + " has been up for " + new Date() - start)
+  res.end(os.hostname() + " has been up for " + uptime())
 }).listen(80)
 
