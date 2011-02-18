@@ -12,6 +12,13 @@ function uptime() {
 }
 
 http.createServer(function(req, res) {
-  res.end(os.hostname() + " has been up for " + uptime() + "s.")
+  var body = os.hostname() + ' has been up for ' + uptime() + 's.'
+
+  res.writeHead(200, {
+    'Content-Type' : 'text/plain'
+  , 'Content-Length' : body.length
+  })
+
+  res.end(body)
 }).listen(80)
 
