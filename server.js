@@ -1,7 +1,8 @@
 var os = require('os')
   , http = require('http')
 
-var start = new Date()
+var start    = new Date()
+  , hostname = os.hostname()
 
 function secondsSince(when) {
   return (new Date() - when) / 1000
@@ -12,7 +13,7 @@ function uptime() {
 }
 
 http.createServer(function(req, res) {
-  var body = os.hostname() + ' has been up for ' + uptime() + 's.'
+  var body = hostname + ' has been up for ' + uptime() + 's.'
 
   res.writeHead(200, {
     'Content-Type' : 'text/plain'
