@@ -20,5 +20,7 @@ http.createServer(function(req, res) {
   })
 
   res.end(body)
-}).listen(80)
+}).on('error', function(err){
+  console.log('error: ' + err)
+}).listen(8080)
 
