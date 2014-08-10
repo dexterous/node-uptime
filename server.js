@@ -1,4 +1,4 @@
-var os = require('os')
+var os   = require('os')
   , http = require('http')
 
 var start    = new Date()
