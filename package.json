@@ -1,7 +1,7 @@
 {
   "name": "node-uptime",
   "version": "1.0.0",
-  "description": "An quick and dirty uptime service",
+  "description": "A quick and dirty uptime service",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
