@@ -1,0 +1,24 @@
+{
+  "name": "node-uptime",
+  "version": "1.0.0",
+  "description": "An quick and dirty uptime service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dexterous/node-uptime.git"
+  },
+  "keywords": [
+    "web",
+    "uptime"
+  ],
+  "author": "saager.mhatre@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dexterous/node-uptime/issues"
+  },
+  "homepage": "https://github.com/dexterous/node-uptime"
+}
