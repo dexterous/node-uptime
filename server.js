@@ -23,6 +23,6 @@ http.createServer(function(req, res) {
   res.end(body)
 }).on('error', function(err){
   console.log('error: ' + err)
-}).listen(8080)
+}).listen(process.env.PORT || 8080)
 
 console.log('Server listening on port 8080, press <C-c> to stop.')
